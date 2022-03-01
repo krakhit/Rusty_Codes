@@ -5,14 +5,15 @@ use rand::Rng;
 fn main()  { // this is just a convention
     println!("Guess the number!");
 
-    let secret_number = rand::thread_rng().gen_range(1..101);// gen_range takes a range 
+    let secret_number = rand::thread_rng().gen_range(1..=100);// gen_range takes a range 
     //as an argument and generates a number within the range, inclusive lower,
     //exclusive upper or one can write 1..=100
 
     //println!("The secret number is: {}",secret_number);
 
     loop {
-       println!("Please input your guess!");//basic print function
+       println!("Please input your guess!");//basic print macro, a function is 
+       // without the !, while a macro is called with a !
 
         let mut guess = String::new();// mutable variable guess, 
         // unmutable let apple = 5; = binding sign, String is a data type, :: 

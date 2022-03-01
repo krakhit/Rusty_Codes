@@ -22,7 +22,9 @@ fn main() {
         println!("The value of y in the inner scope is: {}",y);
     }//end of inner scope
     println!("The value of y is {}",y); //y returns to 6!
-
     let spaces = "   ";
     let _spaces = spaces.len();
+    //let mut spaces  = "       ";
+    //let spaces = spaces.len(); results in compile error, because we cant change
+    //the variable type here.
 }
